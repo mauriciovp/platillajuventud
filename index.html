@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="emisora juventud estero fm">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Emisora Juventud Stereo</title>
+	<link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/estilo-1.css">
+
+	
+	
+	<script type="text/javascript" src="js/scrollreveal.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+				
+
+			$(document).ready(function() {
+			  var menu = $('#menu');
+			  var contenedor = $('#menu-contenedor');
+			  var menu_offset = menu.offset();	
+			  $(window).on('scroll', function() {
+			    if($(window).scrollTop() > menu_offset.top) {
+			      menu.addClass('menu-fijo');	
+			    } else {
+			      menu.removeClass('menu-fijo');
+
+			    }
+
+			  });
+
+			});
+
+	</script>
+
+	<script type="text/javascript">
+
+		function myFunction() {
+		    var x = document.getElementById("audio-emisora");
+		    if (x.style.display === "block") {
+		        x.style.display = "none";
+		    } else {
+		        x.style.display = "block";
+		    }
+		}
+
+	</script>
+
+</head>
+<body>
+	<div class="caja-audio" id="audio-emisora">
+		<div class="caja-reproductor">
+			<audio controls >
+				<source src="http://www.colombiaemite.com:10066/;stream.nsv" type="audio/mp3">  
+			</audio>			
+		</div>
+		<p onclick="myFunction()"><b>Ocultar</b></p>
+	</div>
+	<div id="cabecera">
+		<h2>106.6 FM</h2>
+		<div>
+			<a href="" class="f1"></a>
+			<a href="" class="w1"></a>
+			<a href="" class="in1"></a> 
+		</div>
+
+	</div>
+	<nav id=" #menu-contenedor">
+		<ul id="menu">
+			<li id="img-logo" class="menu1"><a href=""><img src="img/ecualizador-1.gif"> </a></li>
+			<li class="menu1"><a href="">INICIO</a></li>
+			<li class="menu1"><a href="">PROGRAMACION</a></li>
+			<li class="menu1"><a href="">NOTICIAS</a></li>
+			<li class="menu2"><img class="botom-play"  onclick="myFunction()" src="img/boton-play.png"></li>
+			<li class="menu2"><a href="">CONTACTO</a></li>
+			<li class="menu2"><a href="">SIGUENOS</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="section-inicio">			
+		 		<div id="titulo">		 			
+					<img class="img-titulo" src="img/logo-js.png">
+						
+				</div>					
+		</section>
+		<div id="separador-1"></div>
+		<section id="programacion">
+			<div class="ven-pro"><h2 class="titulo-seccion">PROGRAMACION</h2></div>
+			<section id="prg">
+				<div class="p1">
+					<div class="hora-1"><h3>Aroma de Café</h3><p><b>6:30 am</b></p></div><img src="https://www.quobono.com/wp-content/uploads/2018/09/Aroma-caf%C3%A9-1-1280x720.jpg">
+				</div>
+				
+				<div class="p1">
+					<div class="hora-1"><h3>Musica de aplanchar</h3><p><b>8:30 am</b></p></div><img src="https://scontent.fclo9-1.fna.fbcdn.net/v/t1.6435-9/123118626_3437466509640659_789416926068236692_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=973b4a&_nc_ohc=A_knLEswr_MAX9mllEb&_nc_ht=scontent.fclo9-1.fna&oh=76443bf71c9f68b9ec143094215c51c9&oe=61A9AF2E">
+				</div>
+				<div class="p1">
+					<div class="hora-1"><h3>La mañana</h3><p><b>6:30 am</b></p></div><img src="https://www.valoraanalitik.com/wp-content/uploads/2018/07/emisoras.jpg">
+				</div>
+				
+				<div class="p1">
+					<div class="hora-1"><h3>El medio dia</h3><p><b>8:30 am</b></p></div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3zxJo9WzWgwg9yA0tDna-rmRRR0uLW6PxQ&usqp=CAU">
+				</div>
+				<div class="p1">
+					<div class="hora-1"><h3>La tarde</h3><p><b>6:30 am</b></p></div><img src="https://vivirenelpoblado.com/wp-content/uploads/2021/02/Musica-en-Vinilo-para-una-tarde-discola-696x462.jpg">
+				</div>
+				
+				<div class="p1">
+					<div class="hora-1"><h3>La noche</h3><p><b>8:30 am</b></p></div><img src="https://img.lovepik.com/photo/50050/9389.jpg_wh860.jpg">
+				</div>
+			</section>			
+		</section>
+
+		
+		<section class="seccion-noticias">
+			<div class="ven-pro ot" ><h2  class="titulo-seccion">NOTICIAS</h2></div>
+			<section class="not">
+				<div class="slider-noticias">
+					<div class="titulo-sld">
+						<h2>Sevilla</h2>
+						<p>Tarde cafetera en el Balcon del valle<p>
+					</div>
+					<img src="http://paisajeculturalcafetero.org.co/images/uploads/Sevilla(3).jpg">
+				</div>
+				<section class="not-columna">
+					<article class="articulos-columna">
+						<img src="https://scontent.fclo9-1.fna.fbcdn.net/v/t1.6435-9/254996956_2246881468944673_3546626168949658387_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=YQxhSYxhsZYAX_hZ6M5&tn=dca4ChpGU_gbAbmU&_nc_ht=scontent.fclo9-1.fna&oh=056ba6e0d23e79a4b238b50fd546814d&oe=61B09A1E">	
+						<h2>El Colegio SAN LUIS informa que tiene abiertas las inscripciones</h2>
+						<p>abiertas las inscripciones para el año lectivo 2022, en preescolar, básica primaria, básica secundaria y educación media.</p>									
+					</article>
+					<article class="articulos-columna">
+						<img src="https://scontent.fclo9-1.fna.fbcdn.net/v/t1.6435-9/254482272_2246243815675105_3250752632307756730_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=es4242mpmR4AX_g17hz&_nc_ht=scontent.fclo9-1.fna&oh=13ffc2f429384b3395a6d12363294fc2&oe=61B19D3D">	
+						<h2>La sirena del Cuerpo de Bomberos Voluntarios de Sevilla se activó</h2>
+						<p>La sirena del Cuerpo de Bomberos Voluntarios de Sevilla se activó en la mañana de hoy para anunciar el fallecimiento del doctor Gerardo Gómez Díez</p>									
+					</article>
+					<article class="articulos-columna">
+						<img src="https://static2-sevilla.abc.es/media/andalucia/2021/11/08/s/espadas-congreso-U402091871589qE--620x349@abc-Home.jpg">	
+						<h2>El PSOE no va a bloquear la acción del Gobierno andaluz</h2>
+						<p>El PSOE de Andalucía está preparando la enmienda a la totalidad de los Presupuestos de la Junta para 2022 </p>									
+					</article>
+				</section>
+				
+			</section>
+		</section>
+	
+		<section class="eventos">
+			<div class="ven-pro ot" ><h2  class="titulo-seccion">EVENTOS</h2></div>
+			<section class="sec-even">
+				<div class="caja-eventos">
+					<img src="https://scontent.fclo9-1.fna.fbcdn.net/v/t1.6435-9/p526x296/244007852_4554646437928112_621253048308906146_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=a26aad&_nc_ohc=B8b51j06d4kAX9MMPXJ&_nc_ht=scontent.fclo9-1.fna&oh=f37d67a032d833f9707610983cc2c052&oe=61B07294">
+					<div>
+						<h2></h2>
+						<p></p>
+					</div>					
+				</div>
+
+				<div class="caja-eventos">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJfmRhl0Zpcpt3psGiDpRc8X58G0oyXvPBQ&usqp=CAU">
+					<div>
+						<h2></h2>
+						<p></p>
+					</div>					
+				</div>
+
+				<div class="caja-eventos">
+					<img src="https://www.valledelcauca.gov.co/cultura/info/gobvalle/media/calendario/thumbs/thcalendario_400X400_429.jpg">
+					<div>
+						<h2></h2>
+						<p></p>
+					</div>					
+				</div>
+
+			</section>
+		</section>
+
+		<div class="redes-final">
+			<a href="" class="f1-end"></a>
+			<a href="" class="w1-end"></a>
+			<a href="" class="in1-end"></a>
+		</div>
+
+	</main>
+
+	<footer>
+		<section class="sect-foot red-1">
+			<h2> Redes Sociales</h2>
+			<a href="" class="f1"></a>
+			<a href="" class="w1"></a>
+			<a href="" class="in1"></a> 
+		</section>
+
+		<section class="sect-foot">
+			<h2> Contacto</h2>
+			<p>juventudstereo@gmail.com</p>
+			<p>Cel: 323 566 43 54</p>
+		</section>
+
+		<section class="sect-foot me-fot">
+			<h2>Menu</h2>
+			<a href="" >INICIO</a>
+			<a href="" >PROGRAMACION</a>
+			<a href="">NOTICIAS</a> 
+		</sectionc>
+		
+
+	</footer>
+		
+
+	<script type="text/javascript" src="js/scroll-pagina.js"></script>
+
+</body>
+</html>
